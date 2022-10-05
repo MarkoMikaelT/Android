@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/exerciseCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/calculationTextView"
+            app:layout_constraintEnd_toEndOf="@+id/timerTextView"
+            app:layout_constraintStart_toStartOf="@+id/timerTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/calculationTextView"
+            app:layout_constraintEnd_toEndOf="@+id/calculationTextView"
+            app:layout_constraintStart_toStartOf="@+id/calculationTextView"
+            app:layout_constraintTop_toBottomOf="@+id/exerciseCountTextView" />
+
+        <TextView
+            android:id="@+id/calculationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholderText"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputAnswerTextNumber"
+            app:layout_constraintEnd_toEndOf="@+id/inputAnswerTextNumber"
+            app:layout_constraintStart_toStartOf="@+id/inputAnswerTextNumber"
+            app:layout_constraintTop_toBottomOf="@+id/exerciseCountTextView" />
+
+        <EditText
+            android:id="@+id/inputAnswerTextNumber"
+            android:layout_width="267dp"
+            android:layout_height="77dp"
+            android:ems="10"
+            android:hint="@string/answerInputHint"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/submitButton"
+            app:layout_constraintEnd_toEndOf="@+id/submitButton"
+            app:layout_constraintStart_toStartOf="@+id/submitButton"
+            app:layout_constraintTop_toBottomOf="@+id/calculationTextView" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submitButtonText"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputAnswerTextNumber" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+</layout>

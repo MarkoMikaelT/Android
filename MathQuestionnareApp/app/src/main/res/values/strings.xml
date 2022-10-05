@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Harjoitus3-1_Mobiiliohjelmointi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutText">"This is a math game :) "</string>
+    <string name="rulesText">Don\'t use a calculator. Only your brainpower!</string>
+    <string name="startTopText">What do you want to practise</string>
+    <string name="playButtonText">PLAY</string>
+    <string name="addRadioText">Addition</string>
+    <string name="multRadioText">Multiply</string>
+    <string name="divRadioText">Division</string>
+    <string name="placeholderText">PLACEHOLDER</string>
+    <string name="answerInputHint">Type your answer here</string>
+    <string name="submitButtonText">SUBMIT</string>
+    <string name="toStartButtonText">To Start</string>
+</resources>
